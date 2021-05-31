@@ -25,11 +25,14 @@ const logTodos = () => {
     console.log(arrayOfTodos)
 }
 
+let filterToDos = () => {
+    let filtered = arrayOfTodos.filter(userId)
+}
 
 const populateTodos = () => {
     const text = document.createTextNode(arrayOfTodos[0].title)
     let addLI = document.createElement("LI")
-    var OL = document.getElementById("todo-list")
+    let OL = document.getElementById("todo-list")
     addLI.appendChild(text)
     OL.appendChild(addLI)
 
